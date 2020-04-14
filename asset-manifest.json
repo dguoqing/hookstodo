@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/hookstodo/static/css/main.2a09a004.chunk.css",
+    "main.js": "/hookstodo/static/js/main.9560fb8c.chunk.js",
+    "main.js.map": "/hookstodo/static/js/main.9560fb8c.chunk.js.map",
+    "runtime-main.js": "/hookstodo/static/js/runtime-main.b3a81e44.js",
+    "runtime-main.js.map": "/hookstodo/static/js/runtime-main.b3a81e44.js.map",
+    "static/css/2.a43b59a1.chunk.css": "/hookstodo/static/css/2.a43b59a1.chunk.css",
+    "static/js/2.5c678817.chunk.js": "/hookstodo/static/js/2.5c678817.chunk.js",
+    "static/js/2.5c678817.chunk.js.map": "/hookstodo/static/js/2.5c678817.chunk.js.map",
+    "index.html": "/hookstodo/index.html",
+    "precache-manifest.9efcdb45331e509d5402736e57d846ba.js": "/hookstodo/precache-manifest.9efcdb45331e509d5402736e57d846ba.js",
+    "service-worker.js": "/hookstodo/service-worker.js",
+    "static/css/2.a43b59a1.chunk.css.map": "/hookstodo/static/css/2.a43b59a1.chunk.css.map",
+    "static/css/main.2a09a004.chunk.css.map": "/hookstodo/static/css/main.2a09a004.chunk.css.map",
+    "static/js/2.5c678817.chunk.js.LICENSE.txt": "/hookstodo/static/js/2.5c678817.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b3a81e44.js",
+    "static/css/2.a43b59a1.chunk.css",
+    "static/js/2.5c678817.chunk.js",
+    "static/css/main.2a09a004.chunk.css",
+    "static/js/main.9560fb8c.chunk.js"
+  ]
+}
