@@ -7,7 +7,7 @@ const EditModal = memo(({handleCancel,handleOk,visible,editItem}) => {
     const [form] = Form.useForm();
     useEffect(() => {
         form.setFieldsValue(editItem)
-    },[editItem])
+    },[editItem,form])
     return <div>
     <Modal
     getContainer={false}

@@ -9,7 +9,6 @@ import EditModal from './EditModal'
 
 import { Input, List, Button,Form} from "antd";
 
-const { Search } = Input;
 
 const App = () =>  {
   //  data - 完整的 todo 数据
@@ -24,8 +23,6 @@ const App = () =>  {
     setShowArr([...data]);
   }, [data]);
 
-  // 实现任务输入框的双向绑定
-  const [inputValue, setInputValue] = useState("");
 
   // 控制当前展示任务按钮样式 active
   const [active, setActive] = useState("SHOW_ALL");
@@ -43,7 +40,8 @@ const App = () =>  {
     form.resetFields();
   }
 
-  const showStatusList = useCallback((showStatus) => {
+  const showStatusList = useCallback(() => {
+    return (showStatus) => {
     
       if (showStatus === "SHOW_COMPLETED") {
         const newData = data.filter(item => item.isDone);
@@ -58,6 +56,7 @@ const App = () =>  {
         setActive("SHOW_ALL");
       }
     
+  }
   })
 
   const finishTodo = (id) => {
@@ -85,19 +84,21 @@ const App = () =>  {
     setVisible(true)
     setEditItem(v)
   }
-  const handleOk = useCallback((value,{id}) => {
-    let newData = data.map(item => {
-      if(item.id == id){
-        return {
-          ...item,...value
+  const handleOk = useCallback(() => {
+    return (value,{id}) => {
+      let newData = data.map(item => {
+        if(item.id === id){
+          return {
+            ...item,...value
+          }
         }
-      }
-      return {...item}
-    })
-    setData(newData)
+        return {...item}
+      })
+      setData(newData)
+    }
   })
   const handleCancel = useCallback(() => {
-    setVisible(false)
+    return setVisible(false)
   })
   return (
     <div className="todoList">
