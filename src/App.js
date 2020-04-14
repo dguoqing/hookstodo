@@ -40,8 +40,7 @@ const App = () =>  {
     form.resetFields();
   }
 
-  const showStatusList = useCallback(() => {
-    return (showStatus) => {
+  const showStatusList = (showStatus) => {
     
       if (showStatus === "SHOW_COMPLETED") {
         const newData = data.filter(item => item.isDone);
@@ -57,7 +56,7 @@ const App = () =>  {
       }
     
   }
-  },[data])
+
 
   const finishTodo = (id) => {
     const newData = [...data];
@@ -84,8 +83,7 @@ const App = () =>  {
     setVisible(true)
     setEditItem(v)
   }
-  const handleOk = useCallback(() => {
-    return (value,{id}) => {
+  const handleOk = (value,{id}) => {
       let newData = data.map(item => {
         if(item.id === id){
           return {
@@ -96,7 +94,7 @@ const App = () =>  {
       })
       setData(newData)
     }
-  },[data])
+  
   const handleCancel = useCallback(() => {
     return setVisible(false)
   },[])
