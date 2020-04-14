@@ -1,5 +1,5 @@
-import { Modal, Button,Form,Input } from 'antd';
-import React,{useEffect,useState,memo} from 'react'
+import { Modal,Form,Input } from 'antd';
+import React,{useEffect,memo} from 'react'
 
 
 const EditModal = memo(({handleCancel,handleOk,visible,editItem}) => {
