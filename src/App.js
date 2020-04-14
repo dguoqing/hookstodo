@@ -57,7 +57,7 @@ const App = () =>  {
       }
     
   }
-  })
+  },[data])
 
   const finishTodo = (id) => {
     const newData = [...data];
@@ -96,10 +96,10 @@ const App = () =>  {
       })
       setData(newData)
     }
-  })
+  },[data])
   const handleCancel = useCallback(() => {
     return setVisible(false)
-  })
+  },[])
   return (
     <div className="todoList">
       <div className="todoHeader">
